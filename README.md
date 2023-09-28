@@ -15,3 +15,6 @@ wails dev
 ```
 wails build
 ```
+
+## License
+MIT
