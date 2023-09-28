@@ -19,5 +19,8 @@ wails dev
 wails build
 ```
 
+## Demo
+![Demo of template](demo.png?raw=true "Demo")
+
 ## License
 MIT
