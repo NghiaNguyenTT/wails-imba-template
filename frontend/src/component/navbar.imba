@@ -36,7 +36,7 @@ tag navbar
 					<a .btn btn-ghost .normal-case .text-xl route-to="/"> "daisyUI"
 				<div .flex-none>
 					<div .flex .mr-6>
-						<iconify-icon icon="lucide:heart-pulse" width="24" height="24" .mr-1>
+						<span .loading .loading-bars .loading-sm .mr-1>
 						<span .countdown .justify-center .items-center .mr-1>
 							<span style="--value:{up_hour};">
 						<span .mr-1> ":"
