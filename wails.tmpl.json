@@ -3,6 +3,9 @@
   "outputfilename": "{{.BinaryName}}",
   "frontend:install": "pnpm i",
   "frontend:build": "pnpm build",
+  "frontend:dev:watcher": "pnpm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "frontend/src",
   "author": {
     "name": "{{.AuthorName}}",
     "email": "{{.AuthorEmail}}"
