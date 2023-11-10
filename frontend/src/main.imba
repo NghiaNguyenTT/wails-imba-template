@@ -30,13 +30,6 @@ tag app
 					<div .flex .space-x-2>
 						<input .input .input-bordered placeholder="Your name" bind=name>
 						<button .btn .btn-primary @click=greet(name)> "Greeting"
-						<div .flex>
-							<label .swap .swap-rotate>
-								<input type="checkbox" data-toggle-theme="black,lofi" data-act-class="ACTIVECLASS" />
-								<div .swap-on .flex .justify-center .items-center>
-									<iconify-icon icon="ph:sun" width="24" height="24">
-								<div .swap-off .flex .justify-center .items-center>
-									<iconify-icon icon="ph:moon" width="24" height="24">
 					<div>
 						<span> "{feedback}"
 			<div route='/counter-page'>
