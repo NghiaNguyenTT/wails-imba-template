@@ -1,5 +1,5 @@
 # wails-imba-template
-Imba (https://imba.io/) template for Wails
+Imba (https://imba.io/) template for Wails with [DaisyUI](https://daisyui.com/) and [TailwindCss](https://tailwindcss.com/)
 
 ## Key Features
 Simple, less code, fast compilation
