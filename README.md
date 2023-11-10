@@ -12,6 +12,9 @@ Simple, less code, fast compilation
 # Initialize the project
 wails init -n [your-app-name] -t https://github.com/NghiaNguyenTT/wails-imba-template
 
+# Go to app folder
+cd [your-app-name]
+
 # Start dev
 wails dev
 
