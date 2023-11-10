@@ -5,7 +5,8 @@ tag navbar
 		<self>
 			<div .navbar .bg-base-100>
 				<div .flex-none>
-					<a .btn .btn-square .btn-ghost route-to="/counter-page">
+					<label for="my-drawer" .btn .btn-ghost .drawer-button>
+					# <a .btn .btn-square .btn-ghost route-to="/counter-page">
 						<iconify-icon icon="lucide:grip" width="24" height="24">
 				<div .flex-1>
 					<a .btn btn-ghost .normal-case .text-xl route-to="/"> "daisyUI"

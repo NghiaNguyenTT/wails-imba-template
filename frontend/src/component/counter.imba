@@ -1,5 +1,3 @@
-import "./navbar.imba"
-
 tag counter
 	count = 0
 	showing = false
@@ -14,7 +12,6 @@ tag counter
 
 	def render
 		<self>
-			<navbar>
 			<div .flex .flex-col .items-center .justify-center .space-y-4>
 				<div .flex .pt-8>
 					<span .text-2xl .font-bold> "Counter"
