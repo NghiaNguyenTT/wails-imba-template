@@ -5,6 +5,7 @@ import "./component/counter.imba"
 import "./component/navbar.imba"
 import "./component/about.imba"
 import "./component/barchart.imba"
+import "./component/basicchart.imba"
 
 tag app
 	name = ""
@@ -43,12 +44,16 @@ tag app
 						<about>
 					<div route='/barchart'>
 						<barchart>
+					<div route='/basicchart'>
+						<basicchart>
 
 				<div .drawer-side>
 					<label for="my-drawer" aria-label="close sidebar" .drawer-overlay>
 					<ul .menu .p-4 .w-80 .min-h-full .bg-base-200 .text-base-content>
 						<li>
 							<a route-to="/counter-page"> "Counter"
+						<li>
+							<a route-to="/basicchart"> "Basic chart"
 						<li>
 							<a route-to="/barchart"> "Barchart"
 						<li>
