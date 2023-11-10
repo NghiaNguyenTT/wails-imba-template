@@ -4,6 +4,7 @@ import 'iconify-icon'
 import "./component/counter.imba"
 import "./component/navbar.imba"
 import "./component/about.imba"
+import "./component/barchart.imba"
 
 tag app
 	name = ""
@@ -40,12 +41,16 @@ tag app
 						<counter>
 					<div route='/about'>
 						<about>
+					<div route='/barchart'>
+						<barchart>
 
 				<div .drawer-side>
 					<label for="my-drawer" aria-label="close sidebar" .drawer-overlay>
 					<ul .menu .p-4 .w-80 .min-h-full .bg-base-200 .text-base-content>
 						<li>
 							<a route-to="/counter-page"> "Counter"
+						<li>
+							<a route-to="/barchart"> "Barchart"
 						<li>
 							<a route-to="/about"> "About"
 
