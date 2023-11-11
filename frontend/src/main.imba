@@ -6,6 +6,7 @@ import "./component/navbar.imba"
 import "./component/about.imba"
 import "./component/barchart.imba"
 import "./component/basicchart.imba"
+import "./component/clock.imba"
 
 tag app
 	name = ""
@@ -17,8 +18,6 @@ tag app
 
 	def mount
 		window.localStorage.setItem("theme", "lofi")
-		setTimeout(&,5s) do
-			console.log "5s passed"
 	
 	def unmount
 		console.log "unmount"
@@ -46,6 +45,8 @@ tag app
 						<barchart>
 					<div route='/basicchart'>
 						<basicchart>
+					<div route='/clock'>
+						<clock>
 
 				<div .drawer-side>
 					<label for="my-drawer" aria-label="close sidebar" .drawer-overlay>
@@ -56,6 +57,8 @@ tag app
 							<a route-to="/basicchart"> "Basic chart"
 						<li>
 							<a route-to="/barchart"> "Barchart"
+						<li>
+							<a route-to="/clock"> "Clock"
 						<li>
 							<a route-to="/about"> "About"
 
