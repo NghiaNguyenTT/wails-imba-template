@@ -4,6 +4,9 @@ import "./routes/barchart_page.imba"
 import "./routes/basicchart_page.imba"
 import "./routes/clock_page.imba"
 import "./routes/home_page.imba"
+import "./routes/settings_page.imba"
+
+import { det } from "./routes/settings_page.imba"
 
 import "./component/navbar.imba"
 
@@ -33,6 +36,8 @@ tag app
 						<basicchart>
 					<div route='/clock'>
 						<clock>
+					<div route='/setting'>
+						<setting>
 
 				<div .drawer-side>
 					<label for="my-drawer" aria-label="close sidebar" .drawer-overlay>
@@ -45,6 +50,8 @@ tag app
 							<a route-to="/barchart"> "Barchart"
 						<li>
 							<a route-to="/clock"> "Clock"
+						<li>
+							<a route-to="/setting"> "Setting"
 						<li>
 							<a route-to="/about"> "About"
 
