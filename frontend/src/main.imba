@@ -5,6 +5,7 @@ import "./routes/basicchart_page.imba"
 import "./routes/clock_page.imba"
 import "./routes/home_page.imba"
 import "./routes/settings_page.imba"
+import "./routes/pokemon_page.imba"
 
 import { det } from "./routes/settings_page.imba"
 
@@ -24,20 +25,17 @@ tag app
 				<input id="my-drawer" type="checkbox" .drawer-toggle />
 				<div .drawer-content>
 					<navbar>
-					<div route='/'>
-						<home_page>
-					<div route='/counter-page'>
-						<counter>
-					<div route='/about'>
-						<about>
-					<div route='/barchart'>
-						<barchart>
-					<div route='/basicchart'>
-						<basicchart>
-					<div route='/clock'>
-						<clock>
-					<div route='/setting'>
-						<setting>
+					<home_page route='/'>
+					<counter route='/counter-page'>
+					<about route='/about'>
+					<barchart route='/barchart'>
+					<basicchart route='/basicchart'>
+					<clock route='/clock'>
+					<setting route='/setting'>
+					<pokemon route='/pokemon'>
+					<poke route='/poke/:name'>
+					<div route='/*'>
+						'Fallback route. 404 NOT FOUND'
 
 				<div .drawer-side>
 					<label for="my-drawer" aria-label="close sidebar" .drawer-overlay>
@@ -50,6 +48,8 @@ tag app
 							<a route-to="/barchart"> "Barchart"
 						<li>
 							<a route-to="/clock"> "Clock"
+						<li>
+							<a route-to="/pokemon"> "Pokemon"
 						<li>
 							<a route-to="/setting"> "Setting"
 						<li>
