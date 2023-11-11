@@ -1,3 +1,5 @@
+import * as echarts from 'echarts'
+
 tag barchart
 	def render
 		<self>

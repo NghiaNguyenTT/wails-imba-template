@@ -1,20 +1,13 @@
-import { Greet } from "./wailsjs/go/main/App.js"
-import 'iconify-icon'
+import "./routes/counter_page.imba"
+import "./routes/about_page.imba"
+import "./routes/barchart_page.imba"
+import "./routes/basicchart_page.imba"
+import "./routes/clock_page.imba"
+import "./routes/home_page.imba"
 
-import "./component/counter.imba"
 import "./component/navbar.imba"
-import "./component/about.imba"
-import "./component/barchart.imba"
-import "./component/basicchart.imba"
-import "./component/clock.imba"
 
 tag app
-	name = ""
-	feedback = ""
-
-	def greet your_name
-		if your_name
-			feedback = await Greet(your_name)
 
 	def mount
 		window.localStorage.setItem("theme", "lofi")
@@ -29,14 +22,7 @@ tag app
 				<div .drawer-content>
 					<navbar>
 					<div route='/'>
-						<div .flex .flex-col .items-center .justify-center .space-y-4>
-							<div .flex .pt-8>
-								<span .text-2xl .font-bold> "👇 Enter your name to say hi"
-							<div .flex .space-x-2>
-								<input .input .input-bordered placeholder="Your name" bind=name>
-								<button .btn .btn-primary @click=greet(name)> "Greeting"
-							<div>
-								<span> "{feedback}"
+						<home_page>
 					<div route='/counter-page'>
 						<counter>
 					<div route='/about'>

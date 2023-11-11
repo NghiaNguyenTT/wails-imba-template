@@ -225,4 +225,4 @@ tag clock
 	def render
 		<self>
 			<div .flex .flex-col .items-center .justify-center .space-y-4 .mt-6>
-				<div id="clock" style="width:800px;height:800px;">
+				<div id="clock" style="width:600px;height:600px;">

@@ -17,7 +17,8 @@ tag counter
 					<span .text-2xl .font-bold> "Counter"
 				<div .flex .space-x-2>
 					<input type="text" placeholder="Type here" readOnly .input .input-bordered bind=count />
-					<button .btn .btn-outline @click=count++> "count++"
+					<button .btn .btn-outline @click=count++> "+"
+					<button .btn .btn-outline @click=count--> "-"
 					<button .btn .btn-outline @click=count=0> "reset"
 			
 			if count > 9 && showed_once == false

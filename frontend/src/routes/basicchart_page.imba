@@ -3,7 +3,6 @@ import * as echarts from 'echarts'
 tag basicchart
 
 	def mount
-		console.log "Basic chart is mounted to the DOM"
 		let chartDom = document.getElementById('basicchart')
 		let myChart = echarts.init(chartDom)
 		let option = 

@@ -18,8 +18,6 @@ tag navbar
 
 			if up_time == 7200
 				up_time = 0
-			
-			console.log up_time
 			imba.commit!
 	
 	def unmount
@@ -30,7 +28,6 @@ tag navbar
 			<div .navbar .bg-base-100>
 				<div .flex-none>
 					<label for="my-drawer" .btn .btn-ghost .drawer-button>
-					# <a .btn .btn-square .btn-ghost route-to="/counter-page">
 						<iconify-icon icon="lucide:grip" width="24" height="24">
 				<div .flex-1>
 					<a .btn btn-ghost .normal-case .text-xl route-to="/"> "daisyUI"

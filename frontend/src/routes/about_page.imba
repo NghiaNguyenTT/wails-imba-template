@@ -1,4 +1,4 @@
-import './wiki.imba'
+import '../component/wiki.imba'
 
 tag about
 	def render
